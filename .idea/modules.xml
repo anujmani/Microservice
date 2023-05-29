@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MicroService_project.iml" filepath="$PROJECT_DIR$/MicroService_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/address_service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/address_service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/employee_service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/employee_service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/employee_service_2_new.main.iml" filepath="$PROJECT_DIR$/.idea/modules/employee_service_2_new.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/address_service/src/main/main.iml" filepath="$PROJECT_DIR$/address_service/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/address_service/src/test/test.iml" filepath="$PROJECT_DIR$/address_service/src/test/test.iml" />
+    </modules>
+  </component>
+</project>
