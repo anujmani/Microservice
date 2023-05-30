@@ -14,15 +14,6 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/demo6/employee_service" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/demo6/employee_service" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/discoveryService" />
         <option name="modules">
           <set>

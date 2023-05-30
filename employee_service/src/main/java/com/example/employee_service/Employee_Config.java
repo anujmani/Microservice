@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class Employee_Config {
     @Bean
-    @LoadBalanced
+//    @LoadBalanced
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }

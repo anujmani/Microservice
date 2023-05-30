@@ -25,7 +25,7 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	runtimeOnly 'com.mysql:mysql-connector-j'
-
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 
 	runtimeOnly 'org.postgresql:postgresql'
 	annotationProcessor 'org.projectlombok:lombok'

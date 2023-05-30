@@ -1,5 +1,6 @@
 package com.example.employee_service;
 
+import com.example.employee_service.feignclient.AddressClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -19,7 +20,9 @@ public class EmployeeServiceImpl implements EmpolyeeService{
     @Autowired
     private RestTemplate restTemplate;
     @Autowired
-    private LoadBalancerClient loadBalancerClient;
+    private AddressClient addressClient;
+//    @Autowired
+//    private LoadBalancerClient loadBalancerClient;
 //    public EmployeeServiceImpl( @Value ("${addressservice.base.url}")String addressBaseURL,RestTemplateBuilder builder){
 //        this. restTemplate=builder
 //                .rootUri(addressBaseURL)
@@ -39,7 +42,8 @@ public class EmployeeServiceImpl implements EmpolyeeService{
         employeeResponse.setEmail(employee.getEmail());
         employeeResponse.setBloodGroup(employee.getBloodGroup());
 //        AddressResponse addressResponse= restTemplate.getForObject("/address/{id}", AddressResponse.class,id);
-        AddressResponse addressResponse= callToAddressServiceUsingRestTemplate(id);
+//        AddressResponse addressResponse= callToAddressServiceUsingRestTemplate(id);
+        AddressResponse addressResponse= addressClient.getAddressById(id).getBody();
         employeeResponse.setAddressResponse(addressResponse);
         return employeeResponse;
     }
