@@ -10,7 +10,7 @@ public class AddressServiceImpl implements AddressService{
 
     @Override
     public AddressResponse getAddress(int id) {
-
+        System.out.println("i am doing work");
         Address address=addressRepo.findAddressByEmployeeId(id);
         AddressResponse addressResponse= new AddressResponse();
         addressResponse.setId(address.getId());
